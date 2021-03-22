@@ -1,0 +1,77 @@
+/* ---- BASE ---- */
+* {
+  box-sizing: border-box;
+}
+
+/* ---- CSS VARIABLES ---- */
+:root {
+  --menu-font-size : 1.5rem;
+}
+@media screen and (max-width:767px) {
+  :root {
+    --menu-font-size : 1.2rem;
+  }
+}
+/* ---- HEADER ---- */
+.header{
+  background-image: url('../images/blocs_roche.jpeg');
+  background-size: cover;
+  width:100%;
+  min-height: 800px;
+}
+.nav-bar{
+  position:relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo-link{
+  width:100px;
+}
+.nav-menu{
+  width: 70%;
+  display:flex;
+  justify-content: space-around;
+  flex-direction:row;
+  align-items: center;
+}
+.nav-menu a, .toggle-icon {
+  text-decoration: none;
+  color: black;
+  font-family:serif;
+  font-size: var(--menu-font-size);
+  padding: 10px;
+}
+.toggle-link:hover{
+  color : blue;
+}
+.toggle-icon{
+  padding-top: 28px;
+  font-size:30px;
+  cursor: pointer;
+  display:none;
+}
+@media screen and (max-width:767px){
+  .header{
+    min-height:200px;
+  }
+  .toggle-link{
+    width: 60%;
+    background-color: white;
+    opacity:0.6;
+    display:none;
+  }
+  .logo-link{
+    width:70px;
+  }
+  .nav-menu{
+    flex-direction:column;
+    align-items: flex-start;
+  }
+  .toggle-icon{
+    display:block;
+  }
+}
+.responsive{
+  display:block;
+}

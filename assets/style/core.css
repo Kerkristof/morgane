@@ -1,0 +1,70 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create two columns that sits next to each other */
+.row-trio .col-left {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+.row-trio .col-middle {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+.row-trio .col-right {
+  flex: 40%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+/* Create three columns that sits next to each other */
+.row-duo .col-left{
+  flex:50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.row-duo .col-right {
+  flex:50%;
+  max-width: 50%;
+  padding: 0 4px;
+
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a one column-layout instead of two columns */
+@media screen and (max-width: 767px) {
+  .row-trio .col-left, .row-trio .col-middle, .row-trio .col-right {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .row-duo .col-left, .row-duo .col-right{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white; /* Set a background color */
+  color: navy; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 13px; /* Increase font size */
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: navy; /* Add a dark-grey background on hover */
+  color: white; 
+}
