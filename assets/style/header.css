@@ -1,77 +1,124 @@
-/* ---- BASE ---- */
 * {
   box-sizing: border-box;
 }
+#imageheader{
+  border: 1px solid #fff;
+  margin-top:100px;
+  background-image: url("../../assets/images/bandeau.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 500px;
+}
+#logoheader{
+  text-align: center;
+  border:1px solid white;
+  color:white;
+  width: 30%;
+  margin-left:35%;
+  margin-top:180px;
+}
+#logoheader p:first-child{
+  margin:30px 0px 0px 0px;
+  letter-spacing:7px;
+  font-family: "EB Garamond";
+  font-size: 38px;
+}
+#logoheader p:last-child{
+  font-family: Helvetica, sans-serif;
+  letter-spacing:4px;
+  font-size: 14px;
+  margin:0px 0px 40px 0px;
 
-/* ---- CSS VARIABLES ---- */
-:root {
-  --menu-font-size : 1.5rem;
 }
-@media screen and (max-width:767px) {
-  :root {
-    --menu-font-size : 1.2rem;
-  }
-}
-/* ---- HEADER ---- */
-.header{
-  background-image: url('../images/blocs_roche.jpeg');
-  background-size: cover;
-  width:100%;
-  min-height: 800px;
-}
-.nav-bar{
-  position:relative;
-  display: flex;
-  justify-content: space-between;
+.navbar{
+  position: fixed;
+  overflow: hidden;
+  background-color: #fff;
+  top: 0;
   width: 100%;
+  display: flex;
 }
-.logo-link{
-  width:100px;
+.links{
+  display: flex;
+  margin-left:15%;
+  width: 55%;
 }
-.nav-menu{
-  width: 70%;
-  display:flex;
-  justify-content: space-around;
-  flex-direction:row;
-  align-items: center;
-}
-.nav-menu a, .toggle-icon {
+.links a{
   text-decoration: none;
-  color: black;
-  font-family:serif;
-  font-size: var(--menu-font-size);
-  padding: 10px;
+  font-family: Helvetica, sans-serif;
+  font-size:17px;
+  margin: 40px 47px 40px 0px;
+  color:black;
 }
-.toggle-link:hover{
-  color : blue;
+.links a:nth-child(n+2){
+  color:grey;
 }
-.toggle-icon{
-  padding-top: 28px;
-  font-size:30px;
+.links a:hover, .logo:hover{
+  font-style: italic;
+}
+
+.logo{
+  text-decoration: none;
+  color:black;
+  font-size: 17px;
+  letter-spacing:0.2em;
+  margin:40px 0px;
+}
+.burger{
+  float:right;
+  font-size: 25px;
+  margin:36px 0px;
+  display: none;
   cursor: pointer;
-  display:none;
 }
 @media screen and (max-width:767px){
-  .header{
-    min-height:200px;
+  .navbar{
+    justify-content: space-between;
   }
-  .toggle-link{
-    width: 60%;
-    background-color: white;
-    opacity:0.6;
-    display:none;
-  }
-  .logo-link{
-    width:70px;
-  }
-  .nav-menu{
+  .links{
     flex-direction:column;
     align-items: flex-start;
+    display:none;
+    margin:20px 0px 0px 0px;
+    width: 30%;
   }
-  .toggle-icon{
+  .logo{
+    margin: 20px 0px;
+  }
+  .burger{
+    margin:16px 15px;
     display:block;
+  }
+  #imageheader{
+    border: 1px solid #fff;
+    margin-top:60px;
+    background-image: url("../../assets/images/bandeau.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+  }
+  #logoheader{
+    text-align: center;
+    border:1px solid white;
+    color:white;
+    width: 50%;
+    margin-left:25%;
+    margin-top:145px;
+  }
+  #logoheader p:first-child{
+    margin:30px 0px 0px 0px;
+    letter-spacing:7px;
+    font-family: "EB Garamond";
+    font-size: 38px;
+  }
+  #logoheader p:last-child{
+    font-family: Helvetica, sans-serif;
+    letter-spacing:4px;
+    font-size: 14px;
+    margin:0px 0px 40px 0px;
+
   }
 }
 .responsive{
-  display:block;
+  display: block;
 }

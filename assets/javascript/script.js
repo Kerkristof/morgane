@@ -1,6 +1,6 @@
 $(function(){
-  $('.toggle-icon').click(function(){
-    $('.toggle-link').toggleClass('responsive');
+  $('.burger').click(function(){
+    $('.links').toggleClass('responsive');
   });
 
   $(window).scroll(function(){

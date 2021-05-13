@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="assets/style/core.css">
     <link rel="stylesheet" href="assets/style/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/javascript/script.js"></script>
   </head>
