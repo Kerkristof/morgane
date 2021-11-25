@@ -1,9 +1,11 @@
 * {
+  margin:0;
+  padding:0;
+  text-decoration: none;
   box-sizing: border-box;
 }
 #imageheader{
   border: 1px solid #fff;
-  margin-top:100px;
   background-image: url("../../assets/images/bandeau.jpg");
   background-repeat: no-repeat;
   background-size:cover;
@@ -30,68 +32,65 @@
   margin:0px 0px 40px 0px;
 
 }
-.navbar{
-  position: fixed;
-  overflow: hidden;
+.nav-bar{
+  height:100px;
   background-color: #fff;
-  top: 0;
-  width: 100%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.links{
+.nav-links{
+  list-style: none;
   display: flex;
-  margin-left:15%;
-  width: 55%;
+  justify-content: space-between;
+  width: 40%;
 }
-.links a{
-  text-decoration: none;
+.nav-links a{
   font-family: Helvetica, sans-serif;
   font-size:17px;
-  margin: 40px 47px 40px 0px;
   color:black;
 }
-.links a:nth-child(n+2){
+.nav-links li:not(:first-child) a{
   color:grey;
 }
-.links a:hover, .logo:hover{
+.nav-links a:hover, .nav-logo:hover{
   font-style: italic;
 }
-
-.logo{
+.nav-logo a{
   text-decoration: none;
   color:black;
-  font-size: 17px;
+  font-size: 22px;
   letter-spacing:0.2em;
-  margin:40px 0px;
 }
-.burger{
-  float:right;
+.nav-burger{
   font-size: 25px;
-  margin:36px 0px;
   display: none;
   cursor: pointer;
 }
 @media screen and (max-width:767px){
-  .navbar{
-    justify-content: space-between;
+  .nav-bar{
+    justify-content: space-around;
   }
-  .links{
+  .nav-links{
     flex-direction:column;
-    align-items: flex-start;
-    display:none;
-    margin:20px 0px 0px 0px;
-    width: 30%;
+    justify-content: space-around;
+    position:absolute;
+    top:80px;
+    left:0;
+    background-color:white;
+    width:100%;
+    height:80vh;
+    visibility:hidden;
+    /* transform:translateX(100%); */
   }
-  .logo{
-    margin: 20px 0px;
+  .nav-links li{
+    text-align: center;
   }
-  .burger{
-    margin:16px 15px;
+  .nav-burger{
     display:block;
   }
   #imageheader{
     border: 1px solid #fff;
-    margin-top:60px;
     background-image: url("../../assets/images/bandeau.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -120,5 +119,5 @@
   }
 }
 .responsive{
-  display: block;
+    visibility:visible;
 }

@@ -15,7 +15,7 @@
   <body>
     <?php
       include('templates/header.html');
-      include('templates/galerie.html');
+      // include('templates/galerie.html');
       include('templates/footer.html');
      ?>
     <a href="#header" id="myBtn" title="Go to top">&#9651;</a>

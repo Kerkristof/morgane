@@ -1,57 +1,26 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+* {
+  box-sizing: border-box;
 }
-/* Create two columns that sits next to each other */
-.row-trio .col-left {
-  flex: 30%;
-  max-width: 30%;
-  padding: 0 4px;
+.img-box{
+  width: 60%;
+  height:400px;
+  margin-top:40px;
+  margin-left: 20%;
+  background-image: url("../../assets/images/mariage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.row-trio .col-middle {
-  flex: 30%;
-  max-width: 30%;
-  padding: 0 4px;
+.text-box{
+  
+  text-align: center;
 }
-.row-trio .col-right {
-  flex: 40%;
-  max-width: 40%;
-  padding: 0 4px;
-}
-/* Create three columns that sits next to each other */
-.row-duo .col-left{
-  flex:50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-.row-duo .col-right {
-  flex:50%;
-  max-width: 50%;
-  padding: 0 4px;
 
+
+.img-box:hover{
+  opacity: 0.5;
 }
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-/* Responsive layout - makes a one column-layout instead of two columns */
-@media screen and (max-width: 767px) {
-  .row-trio .col-left, .row-trio .col-middle, .row-trio .col-right {
-    flex: 100%;
-    max-width: 100%;
-  }
-  .row-duo .col-left, .row-duo .col-right{
-    flex: 100%;
-    max-width: 100%;
-  }
-  .column img {
-    margin-top: 30px;
-    margin-left: 10%;
-    width: 80%;
-  }
-}
+
+
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */

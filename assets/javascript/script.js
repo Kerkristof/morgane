@@ -1,6 +1,9 @@
-$(function(){
-  $('.burger').click(function(){
-    $('.links').toggleClass('responsive');
+$(document).ready(function(){
+  $('.nav-burger').click(function(){
+    $('.nav-links').toggleClass('responsive');
+  });
+  $('.nav-links li a').click(function(){
+    $('.nav-links').toggleClass('responsive');
   });
 
   $(window).scroll(function(){
